@@ -1,0 +1,10 @@
+[package]
+name = "elfscatter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gimli = { version = "0.34.0", default-features = false, features = ["read", "std"] }
+iced-x86 = { version = "1.21.0", default-features = false, features = ["decoder", "encoder", "block_encoder", "instr_info", "std"] }
+lief = { version = "1.0.0", default-features = false, features = ["rustls-tls"] }
+miniz_oxide = "0.8.9"
